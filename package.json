@@ -1,0 +1,41 @@
+{
+  "name": "seiyu-5off",
+  "version": "0.1.0",
+  "author": "Yuichi Tanikawa <kojole.jp@gmail.com> (https://kojole.jp)",
+  "bugs": {
+    "url": "https://github.com/kojole/seiyu-5off/issues"
+  },
+  "dependencies": {
+    "dayjs": "^1.7.5",
+    "jsdom": "^12.0.0",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.2",
+    "jest": "^23.5.0",
+    "jest-fetch-mock": "^1.6.5"
+  },
+  "homepage": "https://github.com/kojole/seiyu-5off",
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testEnvironment": "node",
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "src/index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kojole/seiyu-5off.git"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest"
+  }
+}
