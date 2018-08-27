@@ -2,6 +2,9 @@ var baseUrl =
   'https://raw.githubusercontent.com/kojole/seiyu-5off/master/data/';
 var id = '0s95g7m3irrcrabge49tlk6so0@group.calendar.google.com';
 
+/**
+ * schedule: every day 04:00
+ */
 function main() {
   var now = new Date();
 
@@ -17,13 +20,7 @@ function main() {
   Logger.log(dates);
 
   var calendar = CalendarApp.getCalendarById(id);
-  dates.forEach(function(date) {
-    var events = calendar.getEventsForDay(date);
-    if (events.length === 0) {
-      calendar.createAllDayEvent('西友5%OFF', date);
-      Logger.log('Create at ' + date.toLocaleString());
-    }
-  });
+  createSaleEvents(calendar, dates);
 }
 
 /**
@@ -51,5 +48,19 @@ function fetchDates(year, mute404) {
   var dateStrings = JSON.parse(contentText);
   return dateStrings.map(function(dateString) {
     return new Date(dateString);
+  });
+}
+
+/**
+ * @param {GoogleAppsScript.Calendar.Calendar} calendar
+ * @param {Date[]} dates
+ */
+function createSaleEvents(calendar, dates) {
+  dates.forEach(function(date) {
+    var events = calendar.getEventsForDay(date);
+    if (events.length === 0) {
+      calendar.createAllDayEvent('西友5%OFF', date);
+      Logger.log('Create at ' + date.toLocaleString());
+    }
   });
 }
