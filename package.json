@@ -11,6 +11,8 @@
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
+    "@google/clasp": "^1.5.3",
+    "@types/google-apps-script": "0.0.27",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.2",
     "jest": "^23.5.0",
@@ -35,6 +37,7 @@
     "url": "git+https://github.com/kojole/seiyu-5off.git"
   },
   "scripts": {
+    "deploy:gas": "clasp push",
     "start": "node ./src/index.js",
     "test": "jest"
   }
