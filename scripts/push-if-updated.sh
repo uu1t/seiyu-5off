@@ -7,7 +7,7 @@ else
   message='Update by script'
 fi
 
-if git diff --quiet "$@"; then
+if git diff-index --quiet HEAD "$@" && [[ -z "$(git ls-files --exclude-standard --others $@)" ]]; then
   echo 'Files are not changed. Do nothing.'
 else
   git config --global url.git@github.com:.pushinsteadof https://github.com/
