@@ -22,7 +22,7 @@ jobs:
         - npm test
         - openssl aes-256-cbc -K $encrypted_c10fe768b1d7_key -iv $encrypted_c10fe768b1d7_iv -in deploy-key.enc -out ~/.ssh/id_rsa -d
         - chmod 600 ~/.ssh/id_rsa
-        - ./scripts/push-if-updated.sh
+        - ./scripts/push-if-updated.sh ./data/*.json
 
 notifications:
   slack:
