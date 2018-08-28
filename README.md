@@ -21,7 +21,7 @@ Google Calendar にて [友だちのカレンダーを追加] に Calendar ID �
 
 - [西友 5%OFF 開催日カレンダー](https://www.seiyu.co.jp/service/5off/)から開催日をスクレイピングして、その結果を `data` ディレクトリ内に JSON として保存します。
   - 開催日のデータは、年毎に `YYYY.json` というファイル名で、日本時間の ISO 8601 形式の文字列の配列として保存しています。
-- Travis CI cron job を使って 1 日に 1 回スクレイピングを行い、`data` ディレクトリに更新がある場合は `master` ブランチに直接 `push` しています。
+- Travis CI cron job を使って 1 日に 1 回スクレイピングを行い、`data` ディレクトリに更新がある場合は `master` ブランチに直接 `push` しています。
 
 ### `src/functions/index.js`
 
