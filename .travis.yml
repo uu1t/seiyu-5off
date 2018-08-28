@@ -4,11 +4,12 @@ node_js:
   - node
 
 env:
-  - TZ=Asia/Tokyo
-  - GIT_AUTHOR_NAME='Yuichi Tanikawa'
-  - GIT_AUTHOR_EMAIL=kojole.jp@gmail.com
-  - GIT_COMMITTER_NAME='Yuichi Tanikawa'
-  - GIT_COMMITTER_EMAIL=kojole.jp@gmail.com
+  global:
+    - TZ=Asia/Tokyo
+    - GIT_AUTHOR_NAME='Yuichi Tanikawa'
+    - GIT_AUTHOR_EMAIL=kojole.jp@gmail.com
+    - GIT_COMMITTER_NAME='Yuichi Tanikawa'
+    - GIT_COMMITTER_EMAIL=kojole.jp@gmail.com
 
 jobs:
   include:
