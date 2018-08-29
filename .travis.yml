@@ -16,7 +16,7 @@ jobs:
     - script: npm test
 
     - stage: scrape
-      if: type = cron AND branch = master
+      # if: type = cron AND branch = master
       script:
         - git checkout master
         - npm start
