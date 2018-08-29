@@ -7,6 +7,9 @@ else
   message='Update by script'
 fi
 
+git status -s
+git diff HEAD "$@"
+
 if git diff-index --exit-code --name-only HEAD "$@" && [[ -z "$(git ls-files --exclude-standard --others $@)" ]]; then
   echo 'Files are not changed. Do nothing.'
 else
