@@ -13,12 +13,12 @@ env:
 
 jobs:
   include:
-    - script: npm test
+    # - script: npm test
 
     - stage: scrape
       # if: type = cron AND branch = master
       script:
-        - git checkout master
+        # - git checkout master
         - npm start
         - npm test
         - openssl aes-256-cbc -K $encrypted_c10fe768b1d7_key -iv $encrypted_c10fe768b1d7_iv -in deploy-key.enc -out ~/.ssh/id_rsa -d
