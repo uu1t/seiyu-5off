@@ -1,6 +1,6 @@
 # seiyu-5off
 
-[![Build Status](https://travis-ci.org/kojole/seiyu-5off.svg?branch=master)](https://travis-ci.org/kojole/seiyu-5off)
+[![Build Status](https://travis-ci.org/uu1t/seiyu-5off.svg?branch=master)](https://travis-ci.org/uu1t/seiyu-5off)
 
 > :calendar: 西友 5%OFF 開催日カレンダー
 

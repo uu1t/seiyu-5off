@@ -1,5 +1,4 @@
-var baseUrl =
-  'https://raw.githubusercontent.com/kojole/seiyu-5off/master/data/';
+var baseUrl = 'https://raw.githubusercontent.com/uu1t/seiyu-5off/master/data/';
 var id = '0s95g7m3irrcrabge49tlk6so0@group.calendar.google.com';
 
 /**

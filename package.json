@@ -1,9 +1,9 @@
 {
   "name": "seiyu-5off",
   "version": "0.1.0",
-  "author": "Yuichi Tanikawa <kojole.jp@gmail.com> (https://kojole.jp)",
+  "author": "Yuichi Tanikawa <u1.tanikawa@gmail.com>",
   "bugs": {
-    "url": "https://github.com/kojole/seiyu-5off/issues"
+    "url": "https://github.com/uu1t/seiyu-5off/issues"
   },
   "dependencies": {
     "dayjs": "^1.7.5",
@@ -18,7 +18,7 @@
     "jest": "^23.5.0",
     "jest-fetch-mock": "^1.6.5"
   },
-  "homepage": "https://github.com/kojole/seiyu-5off",
+  "homepage": "https://github.com/uu1t/seiyu-5off",
   "jest": {
     "roots": [
       "<rootDir>/src"
@@ -34,7 +34,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kojole/seiyu-5off.git"
+    "url": "git+https://github.com/uu1t/seiyu-5off.git"
   },
   "scripts": {
     "deploy:gas": "clasp push",

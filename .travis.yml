@@ -7,9 +7,9 @@ env:
   global:
     - TZ=Asia/Tokyo
     - GIT_AUTHOR_NAME='Yuichi Tanikawa'
-    - GIT_AUTHOR_EMAIL=kojole.jp@gmail.com
+    - GIT_AUTHOR_EMAIL=u1.tanikawa@gmail.com
     - GIT_COMMITTER_NAME='Yuichi Tanikawa'
-    - GIT_COMMITTER_EMAIL=kojole.jp@gmail.com
+    - GIT_COMMITTER_EMAIL=u1.tanikawa@gmail.com
 
 jobs:
   include:
@@ -27,4 +27,4 @@ jobs:
 
 notifications:
   slack:
-    secure: JQQm6e+Sl75QU4YUAwbYgab7dcQEwWVp/EwRjgvmImxEMc2XP8V4pSx4w+4bP74C0dBqoAYjTR1GJXq0vR8tQ7TSWWIlRw85tTK0FKwGJx9w4PcpIFbt6ZyIFmpNedQAGyaFOgrlmpKWPhiYAZTrOsHxyXsKKyUg9ysPIa3UeUMH/p667nlmw4+hUfCSdY73iaOF6gIvCnYxFtr0xTlwiSzZCwAKkYRKK5ZTHk/T8CLs/qh4YuYXJo8Zv+p0HDkgxNDC9/BW0FCeKdkKtz6lmbN4fq8BAFVfut/a8QwiJVwjXUFjbmhruz6/4x1zV0JNFiFjTfOr/zJUoF4+ogwL+yke5/9pv/qMNVz8Xx+Cup22FHsANgZME8BlFVxAN9OSgBzBlpeOrXPMlKzAvTRdwJ0SzqRaVgWTEyUW0c+EtXLlJstJJ+1P3hTMWVedZ+H9Gr9TRfDrrWLtrs0VOHXsSQSIwmJDNknI+RxPh+Qt321UzkaTf1+KT4WRZ4Bv+RpVHZYhlbuo4CfRrvlYgAztNNWLinWqwOXBgNum4ivz68Q+sV3FuATf696FmojdlZ6ngwLHg0m59iloUd6K7qUeVEPikFiQuxvDqjvEG+LgLSsUiw9L0rOIi/e9ztNsCsJxE+Aif7wXCi+xU3ookgV/j6iB+2V7/0Ecf4E6Cb97Qjg=
+    secure: TF072Z76yPpclwmKMX0VbHCHx1MUoqpm9+i+N0UNn6RZqu/J3ZphMMIqGfnDM+URQlPMFO9MhXa0dtNMvjU7eK++RPHCa7IKmKY7fFcJ7af6mRCmfJoy0Nfozhwd3Uiyznj986UqS9Q4cLZzGU7UL3N+cr1BXmZjvemXQQmtZ/Igt2xjyDWqxWxh4KRAXZitHpTTu1F4MsCcOfd4z9nuJkEBShN6fRTCkUwc+9JLshBkJxyH9DIEaM8iXepsltMufhcxrP7P7gRIR/y6gcQq7t/2+qP5JOajup315zIM9MzCzsf40Y2em+Z44G1i+H+zByGPoXry/0E4XBmTprAQDOovq0s49BCZj3EObIcwz07QkHcBlvFa2EeGR6+emxn7g6aKf4r0VrP7OSwhUZZKB3ilkl+DX1XwsqW5cgwME6J/WFpKbntgeG1NOAIqWYoLJoU46w/VKxncZkvaEsTAIAmbJKqYCskyV0GAZmvvBv9/8ZQl1rxYmgc2spffwJF//tru5po0yzatOY3vYI15ICjUb4pNoVJxofHDUMMOyC249Pq3HqlqoQubofR5X/R+9lURlW0cFnFmWDS0yX4AbnR0HpLQNUJTvN7l/xWLYvEC2RSXPMNs9Oy99dXtC2I+kJysQ4oqnWWsyU4n0FQHhqhhD9aLNbjL5FosY/KOLMQ=
