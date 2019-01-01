@@ -1,9 +1,9 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 
-const scraper = require('../scraper');
+const scraper = require('../scraper')
 
 function html(month) {
-  const nextMonth = month === 12 ? 1 : month + 1;
+  const nextMonth = month === 12 ? 1 : month + 1
   return `
 <div class="off_calendar">
   <div class="off_calendar_inner">
@@ -17,45 +17,45 @@ function html(month) {
     </ul>
   </div>
 </div>
-  `.trim();
+  `.trim()
 }
 
-const year = new Date().getFullYear();
+const year = new Date().getFullYear()
 
 describe('.scrape()', () => {
   beforeEach(() => {
-    fetch.resetMocks();
-  });
+    fetch.resetMocks()
+  })
 
   it('extracts sale dates', async () => {
-    fetch.once(html(1)).once(html(11));
+    fetch.once(html(1)).once(html(11))
 
-    let dates = await scraper.scrape();
+    let dates = await scraper.scrape()
     expect(dates).toEqual([
       new Date(year, 1 - 1, 1),
       new Date(year, 1 - 1, 8),
       new Date(year, 2 - 1, 2),
       new Date(year, 2 - 1, 9)
-    ]);
+    ])
 
-    dates = await scraper.scrape();
+    dates = await scraper.scrape()
     expect(dates).toEqual([
       new Date(year, 11 - 1, 1),
       new Date(year, 11 - 1, 8),
       new Date(year, 12 - 1, 2),
       new Date(year, 12 - 1, 9)
-    ]);
-  });
+    ])
+  })
 
   it('extracts sale dates in December', async () => {
-    fetch.once(html(12));
+    fetch.once(html(12))
 
-    const dates = await scraper.scrape();
+    const dates = await scraper.scrape()
     expect(dates).toEqual([
       new Date(year, 12 - 1, 1),
       new Date(year, 12 - 1, 8),
       new Date(year + 1, 1 - 1, 2),
       new Date(year + 1, 1 - 1, 9)
-    ]);
-  });
-});
+    ])
+  })
+})
