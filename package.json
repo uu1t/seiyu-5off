@@ -15,7 +15,7 @@
     "@types/google-apps-script": "0.0.27",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.2",
-    "jest": "^23.5.0",
+    "jest": "^24.3.0",
     "jest-fetch-mock": "^1.6.5"
   },
   "homepage": "https://github.com/uu1t/seiyu-5off",
